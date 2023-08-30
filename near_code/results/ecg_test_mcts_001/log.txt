@@ -1,0 +1,4 @@
+INFO:root:Starting experiment ecg_test_mcts_001
+
+INFO:root:CURRENT program has avg fscore inf: Start(AtomToAtomModule)
+INFO:root:Training sample program: Start(Add(Add(FullFeatureSelect(), FullFeatureSelect()), FullFeatureSelect()))

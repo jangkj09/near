@@ -17,6 +17,25 @@ python train.py \
 --num_mc_samples 5
 
 python train.py \
+--algorithm mcts \
+--exp_name ecg_test \
+--trial 1 \
+--train_data data/ecg_test/x_train.npy \
+--test_data data/ecg_test/x_test.npy \
+--train_labels data/ecg_test/y_train.npy \
+--test_labels data/ecg_test/y_test.npy \
+--input_type "atom" \
+--output_type "atom" \
+--input_size 144 \
+--output_size 9 \
+--num_labels 9 \
+--lossfxn "crossentropy" \
+--normalize \
+--max_depth 5 \
+--num_mc_samples 5
+
+
+python train.py \
 --algorithm astar-near \
 --exp_name example \
 --trial 1 \
